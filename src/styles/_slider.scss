@@ -1,0 +1,187 @@
+.slider {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-height:1370) {
+        padding: 40px 0;
+    }
+
+    ul li {
+        list-style-type: none;
+    }
+
+    ul ul li {
+        list-style-type: disc;
+        margin: 0 0 0 15px;
+    }
+
+    &__exp {
+   
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
+
+}
+
+.slick-initialized {
+    padding:0 80px;
+
+    @media screen and (min-width:1370px) {
+        padding:0;
+    }
+}
+
+.slick-slider {
+    min-height: 300px;
+    h1 {
+        margin: 0 0 50px 0;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: center;
+
+        &:after {
+            margin: 15px auto 0;
+            display: block;
+            width:220px;
+            height:7px;
+            content: '';
+            background: $contrastRed;
+        }
+    }    
+}
+
+.slick-arrow {
+    color:000;
+}
+
+.slick-prev {
+    left: 35px;
+    width: 35px;
+    height: 35px;
+    @media screen and (min-width:1370px) {
+        left: -80px;
+    }
+
+    &:before {
+        color:#000;
+        font-size: 35px;
+    }
+}
+
+.slick-next {
+    right: 35px;
+    width: 35px;
+    height: 35px;
+    @media screen and (min-width:1370px) {
+        right: -80px;
+    }
+
+    &:before {
+        color: #000;
+        font-size: 35px;
+    }
+}
+
+.slick-dots {
+    left: 1px;
+    li {
+        button {
+            &:before {
+                font-size: 8px;
+            }
+        }
+    }
+    
+}
+
+.about {
+
+    &__text {
+        font-size: 1.5rem;
+        text-align: justify;
+    }    
+}
+
+.wrapper {
+    padding: 0 40px;
+    @media screen and (min-width: 1370px) {
+
+    }
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+
+
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__job {
+        margin: 0 0 30px;
+        width: 100%;
+
+        @media screen and (min-width:1200px) {
+            margin: 0;
+            width: 30%;
+        }
+
+        &-position {
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+
+            @media screen and (min-width:1200px) {
+                height:96px;
+            }
+
+        }
+
+        &-company {
+            margin: 0 0 3px 0;
+            font-weight: 400;
+            color: $contrastRed;
+        }
+
+        &-location {
+            margin: 0 0 3px 0;
+        }
+
+        &-time {
+            margin: 0 0 5px 0;
+        }
+
+        &-resps {
+
+            &-resp {
+                line-height: 1.5;
+            }
+        }
+    }  
+}
+
+.edu {
+
+    &__school {
+        margin: 0 0 7px 0;
+        font-size: 1.7rem;
+    }
+
+    &__location {
+        margin: 0 0 3px 0;
+        font-weight: 400;
+        color: $contrastRed;
+    }
+
+    &__time, &__degree {
+        font-weight: 400;
+    }
+
+    h3 {
+        margin: 0 0 3px 0;
+    }
+}
