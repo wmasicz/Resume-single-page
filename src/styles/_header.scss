@@ -1,0 +1,37 @@
+@import './variables';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: url('../images/pic2.jpg') transparent no-repeat bottom center fixed;
+    background-size: cover;
+    
+    &__photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:320px;
+        height: 320px;
+        border-radius: 50%;
+        background: #fff;
+        margin: 0 auto;
+        text-align: center;
+        @extend %boxShadow;
+    }
+
+    &__text {
+        padding: 30px 0 0;
+        text-align: center;
+        color: #fff;
+
+        h1 {
+            font-size:3.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+    }
+}
