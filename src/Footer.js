@@ -39,18 +39,13 @@ export default class Footer extends Component {
                     <div className="container__footer">
                         <div className="footer__social">
                             <ul className="footer__social-icons">
-                                {/* {
-                                    icons.map((item, index)=> 
-                                        <li className="footer__social-icon" key={index}><img className={`footer__social-icon--${item.name}`} src={item.src} alt={item.name} target="_blank" /></li>
-                                    )
-                                } */}
-                                <a href={icons[0].src} target="_blank"><FontAwesomeIcon className="footer__social-icon--linkedIn" icon={ faLinkedin } size="3x" /></a>
-                                <a href={icons[1].src} target="_blank"><FontAwesomeIcon className="footer__social-icon--gitHub" icon={ faGithub } size="3x"/></a>
-                                <a href={icons[2].src} target="_blank"><FontAwesomeIcon className="footer__social-icon--mail" icon={ faAt } size="3x"/></a>
+                                <a href={icons[0].src} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="footer__social-icon--linkedIn" icon={ faLinkedin } size="3x" /></a>
+                                <a href={icons[1].src} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="footer__social-icon--gitHub" icon={ faGithub } size="3x"/></a>
+                                <a href={icons[2].src} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="footer__social-icon--mail" icon={ faAt } size="3x"/></a>
                             </ul>
                         </div>
                         <div className="footer__copyright">
-                            <a className="btn" href="https://drive.google.com/open?id=16_kGjU5fph89Yf6EIdLscVzosg9KOMFB" target="_blank">Download my resume</a>
+                            <a className="btn" href="https://drive.google.com/open?id=16_kGjU5fph89Yf6EIdLscVzosg9KOMFB" target="_blank" rel="noopener noreferrer">Download my resume</a>
                         </div>
                     </div>
                 </div>
