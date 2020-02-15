@@ -7,10 +7,10 @@ export default class Header extends Component {
             <div className="header">
                 <div className="container">
                     <div className="container__header">
-                        <div className="header__photo">
+                        <div className="header__photo slide-in-top">
                             <img className="header__photo-avatar" alt="avatar" src={avatar} />
                         </div>
-                        <div className="header__text">
+                        <div className="header__text tracking-in-expand">
                             <h1>Wojciech Masicz</h1>
                             <h3>Junior Frontend Developer</h3>
                         </div>

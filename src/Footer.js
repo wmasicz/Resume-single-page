@@ -29,9 +29,27 @@ let getCurrentDate = () =>{
     let year = new Date().getFullYear();
     
     return `${year}-${month<10?`0${month}`:`${month}`}-${date}`
-    }
+}
+
+
 
 export default class Footer extends Component {
+    state = {
+        class: ''
+    };
+
+    flipBtnIn = () => {
+        this.setState({
+            class: 'flip-horizontal-bottom'
+        })
+    }
+
+    flipBtnOut = () => {
+        this.setState({
+            class: 'flip-horizontal-back'
+        })
+    }
+
     render() {
         return (
             <div className="footer">
@@ -45,7 +63,17 @@ export default class Footer extends Component {
                             </ul>
                         </div>
                         <div className="footer__copyright">
-                            <a className="btn" href="https://drive.google.com/open?id=16_kGjU5fph89Yf6EIdLscVzosg9KOMFB" target="_blank" rel="noopener noreferrer">Download my resume</a>
+                            <a 
+                                className={`btn ${this.state.class}`} 
+                                onMouseEnter={this.flipBtnIn} 
+                                onMouseLeave={this.flipBtnOut}
+                                href="https://drive.google.com/open?id=16_kGjU5fph89Yf6EIdLscVzosg9KOMFB" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                download="w3logo"
+                            >
+                               
+                            </a>
                         </div>
                     </div>
                 </div>

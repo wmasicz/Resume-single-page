@@ -1,8 +1,13 @@
 .slider {
-    padding: 40px 80px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media screen and (min-width:550px) {
+        padding: 40px 80px;
+    }
+
     @media screen and (min-height:1370) {
         padding: 40px 0;
     }
@@ -34,7 +39,7 @@
 }
 
 .slick-initialized {
-    padding:0 80px;
+    padding:0;
 
     @media screen and (min-width:1370px) {
         padding:0;
@@ -56,18 +61,36 @@
             height:7px;
             content: '';
             background: $contrastRed;
+            @extend %underlineAnimation;
         }
     }    
 }
 
 .slick-arrow {
     color:000;
+    display: none;
+
+    &:before, &:after {
+        display: none;
+        @media screen and (min-width: 550px) {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 550px) {
+        display: block;
+    }
 }
 
 .slick-prev {
-    left: 35px;
-    width: 35px;
-    height: 35px;
+    display: none;
+
+    @media screen and (min-width: 400px) {
+        left: -40px;
+        width: 35px;
+        height: 35px;
+    }
+
     @media screen and (min-width:1370px) {
         left: -80px;
     }
@@ -80,9 +103,14 @@
 }
 
 .slick-next {
-    right: 35px;
-    width: 35px;
-    height: 35px;
+    display: none;
+
+    @media screen and (min-width: 400px) {
+        right: -40px;
+        width: 35px;
+        height: 35px;
+    }
+
     @media screen and (min-width:1370px) {
         right: -80px;
     }
