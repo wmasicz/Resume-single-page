@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+
+You can view the damo at:
+https://wmasicz.github.io/Resume-single-page/
+
 ## Slider
 
 For creating a slider carousel I had used React Slick:
