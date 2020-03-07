@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 For creating a slider carousel I'nad used React Slick
 
-[https://github.com/akiran/react-slick]
+https://github.com/akiran/react-slick
 
 ## Available Scripts
 
