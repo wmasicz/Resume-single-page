@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import About from './About';
 import Exp from './Exp';
 import Edu from './Edu';
-import Hobby from './Hobby';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -35,9 +34,6 @@ export default class ExpSlider extends Component {
                 </div>
                 <div className="slider__edu">
                     <Edu />
-                </div>
-                <div className="slider__hobby">
-                    <Hobby />
                 </div>
             </Slider>
         </div>

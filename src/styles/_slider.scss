@@ -144,6 +144,9 @@
 
 .wrapper {
     padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media screen and (min-width: 1370px) {
 
     }
@@ -204,6 +207,8 @@
 }
 
 .edu {
+    display: inline-block;
+    margin: 0 auto;
 
     &__school {
         margin: 0 0 7px 0;

@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Slider
+
+For creating a slider carousel I had used React Slick:
+https://github.com/akiran/react-slick
+
 ## Available Scripts
 
 In the project directory, you can run:

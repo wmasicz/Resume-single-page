@@ -2,11 +2,23 @@ import React, { Component } from 'react'
 
 const exp = [
     {
+        name: 'Junior Graphic Designer/Web Designer Trainee',
+        company: 'Grupa Pracuj Sp. z o. o.',
+        location: 'Warsaw, PL',
+        from: '04-2019',
+        to: '06-2019',
+        resp: [
+            'supporting Graphic Studio in designing layouts for jobboard ads',
+            'solving code problems',
+            'graphic support for Customer Care Dep.'
+        ]
+    },
+    {
         name: 'Frontend Trainee',
         company: 'Grupa Pracuj Sp. z o. o.',
         location: 'Warsaw, PL',
         from: '02-2020',
-        to: 'current',
+        to: '03-2020',
         resp: [
             'maintenance of the pracuj.pl',
             'fixing bugs',
@@ -26,18 +38,6 @@ const exp = [
             'designing layouts for jobboard ads',
             'solving code problems',
             'designing mailings',
-            'graphic support for Customer Care Dep.'
-        ]
-    },
-    {
-        name: 'Junior Graphic Designer/Web Designer Trainee',
-        company: 'Grupa Pracuj Sp. z o. o.',
-        location: 'Warsaw, PL',
-        from: '04-2019',
-        to: '06-2019',
-        resp: [
-            'supporting Graphic Studio in designing layouts for jobboard ads',
-            'solving code problems',
             'graphic support for Customer Care Dep.'
         ]
     }
