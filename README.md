@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-You can view the damo at:
+You can view demo at:
 https://wmasicz.github.io/Resume-single-page/
 
 ## Slider
